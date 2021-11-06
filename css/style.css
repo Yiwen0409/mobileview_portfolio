@@ -1,0 +1,341 @@
+header{
+    width:auto;
+    position: sticky;
+    top:0;
+    background-color: #ffffff;
+    z-index: 1;
+    font-size:30px;
+    padding:10px;
+}
+
+i{
+    color:#202020;
+    display:block;
+    padding:5px 20px 5px 20px;
+}
+
+i:hover{
+    color:#000000;
+}
+
+header #myLinks{
+    display:none;
+}
+
+header a{
+    display:block;
+}
+
+header a .icon{
+    display:block;
+    position:absolute;
+}
+
+.notcurrent{
+    color:#202020;
+    font-size:20px;
+    font-family:"proxima nova","Helvetica Neue",Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin:10px;
+    padding:10px;
+}
+
+.current{
+    margin:10px;
+    padding:10px;
+    background-color:#202020;
+    color:white;
+    text-decoration-line: none;
+    font-size:20px;
+    font-family:Impact, "Haettenschweiler", 'Arial Narrow Bold', sans-serif;
+}
+
+.introduction{
+    height: 800px;
+    background-image: url("../images/IntroPic.jpeg");
+}
+
+.intro_arch{
+    height:500px;
+    background-image: url("../images/architecture.jpeg");
+}
+
+.intro_fash{
+    height:500px;
+    background-image: url("../images/fashion.jpeg");
+}
+
+.intro_grap{
+    height:500px;
+    background-image: url("../images/graphics.jpeg");
+}
+
+.introduction p{
+    background-color: rgba(0,0,0,0.5);
+    margin:0;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.intro_arch p,.intro_fash p,.intro_grap p{
+    background-color: rgba(0,0,0,0.5);
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+body{
+    background-color: #202020;
+}
+
+p{
+    color:whitesmoke;
+    line-height: 25px;
+    font-family: "aktiv-grotesk",'Clarkson',Helvetica,sans-serif;;
+}
+
+h3{
+    color:#ffffff;
+    text-align: center;
+    font-weight:bold;
+    font-family:"aktiv-groteskArial", Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.archpics, .fashpics, .grappics{
+    display: flex;
+    flex-direction: column;
+}
+
+.architecture a, .fashion a, .graphics a{
+    color:rgb(115, 211, 255);
+    text-decoration: none;
+    display:block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.architecture img, .fashion img,.graphics img{
+    margin:20px 40px 20px 40px;
+}
+
+.pagelink1,.pagelink2,.pagelink3{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.pagelink1 a,.pagelink2 a,.pagelink3 a,.architecture a,.fashion a,.graphics a{
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:10px;
+    text-decoration-line: underline;
+}
+
+#asia,#europe,#america{
+    display:grid;
+    grid-column-gap:10px;
+    grid-row-gap:20px;
+    grid-template-columns: auto 400px auto;
+    grid-template-rows: 50px 300px 200px 300px 200px 300px 200px;
+}
+
+#asia h3,#europe h3,#america h3{
+    color:whitesmoke;
+    text-align: center;
+    margin: auto;
+    grid-column:2/span 1;
+    grid-row: 1/span 1;
+    font-size: 25px;
+}
+
+#asiapic1,#europepic1,#americapic1{
+    grid-column:2/span 1;
+    grid-row:2/span 1;
+}
+
+#asiatext1,#europetext1,#americatext1{
+    grid-column: 2/span 1;
+    grid-row: 3/span 1;
+    color:whitesmoke;
+}
+
+#asiapic2,#europepic2,#americapic2{
+    grid-column: 2/span 1;
+    grid-row: 4/span 1;
+}
+
+#asiatext2,#europetext2,#americatext2{
+    grid-column:2/span 1;
+    grid-row: 5/span 1;
+}
+
+#asiapic3,#europepic3,#americapic3{
+    grid-column: 2/span 1;
+    grid-row: 6/span 1;
+}
+
+#asiatext3,#europetext3,#americatext3{
+    grid-column: 2/span 1;
+    grid-row: 7/span 1;
+}
+
+#men,#women,#unisex{
+    display:grid;
+    grid-column-gap:10px;
+    grid-row-gap:20px;
+    grid-template-columns: auto 400px auto;
+    grid-template-rows: 50px 600px 100px 600px 100px 600px 100px;
+}
+
+#men h3,#women h3,#unisex h3{
+    color:whitesmoke;
+    text-align: center;
+    margin: auto;
+    grid-column:2/span 1;
+    grid-row: 1/span 1;
+    font-size: 25px;
+}
+
+#menpic1,#womenpic1,#unisexpic1{
+    grid-column:2/span 1;
+    grid-row:2/span 1;
+}
+
+#mentext1,#womentext1,#unisextext1{
+    grid-column: 2/span 1;
+    grid-row: 3/span 1;
+    color:whitesmoke;
+}
+
+#menpic2,#womenpic2,#unisexpic2{
+    grid-column: 2/span 1;
+    grid-row: 4/span 1;
+}
+
+#mentext2,#womentext2,#unisextext2{
+    grid-column:2/span 1;
+    grid-row: 5/span 1;
+}
+
+#menpic3,#womenpic3,#unisexpic3{
+    grid-column: 2/span 1;
+    grid-row: 6/span 1;
+}
+
+#mentext3,#womentext3,#unisextext3{
+    grid-column: 2/span 1;
+    grid-row: 7/span 1;
+}
+
+#brands,#interfaces,#visuals{
+    display:grid;
+    grid-column-gap:10px;
+    grid-row-gap:20px;
+    grid-template-columns: auto 400px auto;
+}
+
+#brands{
+    grid-template-rows: 50px 570px 100px 400px 100px 500px 100px;
+}
+
+#interfaces{
+    grid-template-rows: 50px 420px 100px 300px 100px 300px 100px;
+}
+
+#visuals{
+    grid-template-rows: 50px 300px 100px 520px 100px 400px 100px;
+}
+
+#brands h3,#interfaces h3,#visuals h3{
+    color:whitesmoke;
+    text-align: center;
+    margin: auto;
+    grid-column:2/span 1;
+    grid-row: 1/span 1;
+    font-size: 25px;
+}
+
+#brandspic1,#interfacespic1,#visualspic1{
+    grid-column:2/span 1;
+    grid-row:2/span 1;
+}
+
+#brandstext1,#interfacestext1,#visualstext1{
+    grid-column: 2/span 1;
+    grid-row: 3/span 1;
+    color:whitesmoke;
+}
+
+#brandspic2,#interfacespic2,#visualspic2{
+    grid-column: 2/span 1;
+    grid-row: 4/span 1;
+}
+
+#brandstext2,#interfacestext2,#visualstext2{
+    grid-column:2/span 1;
+    grid-row: 5/span 1;
+}
+
+#brandspic3,#interfacespic3,#visualspic3{
+    grid-column: 2/span 1;
+    grid-row: 6/span 1;
+}
+
+#brandstext3,#interfacestext3,#visualstext3{
+    grid-column: 2/span 1;
+    grid-row: 7/span 1;
+}
+
+.myprofile img{
+    display:block;
+    width: 75%;
+    margin:30px auto 30px auto;
+    border-radius: 200px;
+}
+
+.information{
+    display:block;
+    width:75%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.information p{
+    margin-bottom:10px;
+    line-height: 25px;
+    text-align: center;
+}
+
+footer{
+    background-color: white;
+    padding:40px;
+    margin-top:30px;
+}
+
+#name,#address,#city,#number,#email{
+    color:#202020;
+    font-family:poppins;
+}
+
+#name{
+    font-size:20px;
+    font-weight: bold;
+    margin-top:20px;
+}
+
+#address,#number{
+    margin-top:20px;
+}
+
